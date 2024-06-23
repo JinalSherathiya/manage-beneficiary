@@ -1,0 +1,119 @@
+.mainPageWrap {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: $screen-bg-color;
+    .contentWrap {
+        padding: 30px;
+        background-color: #fff;
+        border-radius: 12px;
+        color: #000;
+        min-width: 740px;
+        .noFoundText {
+            width: 100%;
+            text-align: center;
+            font-size: 20px;
+            margin-top: 20px;
+        }
+        .topSection {
+            display: flex;
+            // justify-content: space-between;
+            align-items: center;
+            padding-bottom: 20px;
+            .backIcon {
+                max-width: 30px;
+                cursor: pointer;
+                margin-right: 20px;
+            }
+            h1 {
+                font-size: 22px;
+                margin: 0;
+                display: inline-block;
+                color: $screen-bg-color;
+            }
+        }
+        .formControl {
+            margin-bottom: 20px;
+            label {
+                display: block;
+                padding-bottom: 5px;
+                font-size: 14px;
+            }
+            input,select {
+                height: 35px;
+                border-radius: 5px;
+                border: 1px solid #bbb9b9;
+                width: 100%;
+                padding: 0 15px;
+                transition: all .5s ease;
+                outline: 0;
+                &:focus {
+                    border: 1px solid $screen-bg-color;
+                }
+            }
+        } 
+        .submitWrap {
+            display: inline-block;
+            width: 100%;
+            margin-top: 10px;
+            text-align: right;
+        }
+        .addBeneficiaryLink {
+            text-align: right;
+            margin-bottom: 30px;
+            a {
+                color: $screen-bg-color;
+                border-bottom: 1px solid $screen-bg-color;
+                transition: all .5s ease-in-out;
+                &:hover {
+                    border-bottom: 0;
+                }
+            }
+        }
+        .beneficiaryList {
+            li {
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                .name {
+                    width: 30%;
+                }
+                .accNum {
+                    width: 40%;
+                }
+                .action {
+                    width: 30%;
+                    text-align: right;                                        
+                    .actionBtn {
+                        border: 0;
+                        outline: 0;
+                        padding: 0;
+                        margin-left: 15px;
+                        background-color: transparent;
+                        cursor: pointer;
+                        img {
+                            max-width: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        .viewBeneficiary {
+            li {
+                padding: 10px;
+                border-bottom: 1px solid #ddd;
+                strong {
+                    min-width: 140px;
+                    display: inline-block;
+                }
+                &:last-child {
+                    border-bottom: 0;
+                }
+            }
+        }
+    }
+}
